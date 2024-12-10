@@ -9,7 +9,7 @@ Criar uma infrestrutura moderna de analytics para a Adventure Works, que permita
 
 # 2. Orçamento
 
-Considerando as ferramentas sugeridas no desafio, é rezoável assumir um investimento moderado inicial para infraestutura e licenças, uma vez que serão utilizadas ferramentas, tal como. Snowflake, dbt e Power BI.
+Considerando as ferramentas sugeridas no desafio, é rezoável assumir um investimento moderado inicial para infraestutura e licenças, uma vez que serão utilizadas ferramentas, tal como, `Snowflake`, `dbt` e `Power BI`.
 
 O orçamento também deverá considerar o tempo dos profissionais envolvidos, incluindo Gabriel Santos (Analista de TI), além de treinamentos ou consultorias, se for necessário.
 
@@ -17,48 +17,48 @@ O orçamento também deverá considerar o tempo dos profissionais envolvidos, in
 
 Ferramentas disponíveis:
 
-* **Draw IO**: Para criação de modelo conceitual;
-* **Snowflake**: Para criação e armazenamento do Data Warehouse;
-* **dbt Cloud**: Para transformação e modelagem dos dados;
-* **Power BI**: Para criar dashboard interativo;
-* **Github**: Para versionamento de código.
+* **`Draw IO`**: Para criação de modelo conceitual;
+* **`Snowflake`**: Para criação e armazenamento do Data Warehouse;
+* **`dbt Cloud`**: Para transformação e modelagem dos dados;
+* **`Power BI`**: Para criar dashboard interativo;
+* **`Github`**: Para versionamento de código.
 
 # 4. Equipe:
 
 Colaboradores responsáveis pelo desenvolvimento do projeto:
 
-**Gabriel Silva**: Analista de TI responsável por garantir acesso aos dados.
+**`Gabriel Silva`**: Analista de TI responsável por garantir acesso aos dados.
 
-**Rafael Machado**: Engenheiro de Analytcis responsável pelo desenvolvimento do projeto, tal como, modelagem, transformação dos dados e dashboards.
+**`Rafael Machado`**: Engenheiro de Analytcis responsável pelo desenvolvimento do projeto, tal como, modelagem, transformação dos dados e dashboards.
 
 # 5. Usuários de negócio
 
 Usuários responsáveis por fornecer informações referentes as regras de negócio.
 
-**Silvana Teixeira**: Diretora comercial e principal fonte de informação sobre as necessidades e regras de negócio da área comercial, sendo necessário alinhar métricas e objetivos do dashboard com suas expectativas.
+**`Silvana Teixeira`**: Diretora comercial e principal fonte de informação sobre as necessidades e regras de negócio da área comercial, sendo necessário alinhar métricas e objetivos do dashboard com suas expectativas.
 
-**João Muller**: Diretor de inovação e idealizador do projeto.
+**`João Muller`**: Diretor de inovação e idealizador do projeto.
 
 # 6. Patrocinadores
 
-**Carlos Silveira**: CEO que é o principal patrocinador e que toma as decisões. Comprometido com a visão de tornar a Adventure Works uma empresa data-driven.
+**`Carlos Silveira`**: CEO que é o principal patrocinador e que toma as decisões. Comprometido com a visão de tornar a Adventure Works uma empresa data-driven.
 
 Exige garantia da qualidade e confiabilidade dos dados, pricipalmente para validar métrica de vendas brutas de 2011.
 
-**João Muller**: Idealizador do projeto e aliado estratégico. Tem alto nível de decisão e poderá ajudar com possíveis resistências das área comercial.
+**`João Muller`**: Idealizador do projeto e aliado estratégico. Tem alto nível de decisão e poderá ajudar com possíveis resistências das área comercial.
 
 # 7. Definição do Escopo do Projeto
 
 O escopo delimita o que será entregue no projeto:
 
-**Objetivo Principal**: Criar uma infraestrutura de analytics moderna para atender às perguntas de negócio da área de vendas.
+**`Objetivo Principal`**: Criar uma infraestrutura de analytics moderna para atender às perguntas de negócio da área de vendas.
 
 **Entregáveis**:
 
-1. Modelo conceitual do data warehouse, com tabelas de fatos e dimensões.
-2. Configuração do data warehouse na nuvem (Snowflake).
-3. Transformação de dados usando dbt Cloud, incluindo documentação e testes (source, primary keys e qualidade dos dados).
-4. Dashboards interativos do Power BI.
+1. Modelo conceitual do data warehouse, com tabelas de fatos e dimensões (`Draw IO`).
+2. Configuração do data warehouse na nuvem (`Snowflake`).
+3. Transformação de dados usando `dbt Cloud`, incluindo documentação e testes (source, primary keys e qualidade dos dados).
+4. Dashboards interativos do `Power BI`.
 5. Vídeo de apresentação demonstrando as etapas e resultados.
 
 **Exclusões do Escopo**:
@@ -72,26 +72,26 @@ O escopo delimita o que será entregue no projeto:
 
 **Patrocinadores**:
 
-**Carlos Silveira (CEO)**: Reforçar a visão estratégica do projeto e exigir garantia de qualidade nos dados.
-**João Muller (Diretor de Inovação)**: Destacar o impacto do projeto e alinhar as expectativas com a diretoria.
+**`Carlos Silveira (CEO)`**: Reforçar a visão estratégica do projeto e exigir garantia de qualidade nos dados.
+**`João Muller (Diretor de Inovação)`**: Destacar o impacto do projeto e alinhar as expectativas com a diretoria.
 
 **Equipe Técnica**:
 
-**Rafael Machado (Analytics Engineer)**: Responsável por liderar o projeto e entregar as soluções técnicas.
-**Gabriel Santos (Analista de TI)**: Suporte técnico e fornecimento de acesso aos dados.
+**`Rafael Machado (Analytics Engineer)`**: Responsável por liderar o projeto e entregar as soluções técnicas.
+**`Gabriel Santos (Analista de TI)`**: Suporte técnico e fornecimento de acesso aos dados.
 
 **Usuários de Negócio**:
 
-**Silvana Teixeira (Diretora Comercial)**: Fornecer informações sobre as regras de negócio e alinhar o escopo com as necessidades da área de vendas.
+**`Silvana Teixeira (Diretora Comercial)`**: Fornecer informações sobre as regras de negócio e alinhar o escopo com as necessidades da área de vendas.
 
 # 9. Identificação das Fontes de Dados Principais
 
 Fontes de dados disponíveis:
 
-**ERP (SAP)**: Dados de pedidos, vendas, produtos e clientes.
-**CRM (Salesforce)**: Informações sobre interações com clientes (não essencial neste escopo inicial).
-**Bancos de Dados Transacionais (PostgreSQL)**: Fonte dos dados principais do desafio, incluindo schemas de vendas, produção, recursos **humanos e compras.
-**Web Analytics (Google Analytics)**: Dados futuros, fora do escopo atual.
+**`ERP (SAP)`**: Dados de pedidos, vendas, produtos e clientes.
+**`CRM (Salesforce)`**: Informações sobre interações com clientes (não essencial neste escopo inicial).
+**`Bancos de Dados Transacionais (PostgreSQL)`**: Fonte dos dados principais do desafio, incluindo schemas de vendas, produção, recursos **humanos e compras.
+**`Web Analytics (Google Analytics)`**: Dados futuros, fora do escopo atual.
 
 # 10. Identificação das Fontes de Informação sobre o Negócio
 
@@ -104,16 +104,16 @@ Para entender as regras de negócio e alinhar as métricas às expectativas:
 
 **Fontes Humanas**:
 
-**Diretores**: Detalhamento estratégico e validação do escopo.
-**Silvana Teixeira (Diretora Comercial)**: Regras de negócio e validação das métricas.
-**Gabriel Santos (Analista de TI)**: Estrutura dos dados e relacionamento entre tabelas.
+**`Diretores`**: Detalhamento estratégico e validação do escopo.
+**`Silvana Teixeira (Diretora Comercial)`**: Regras de negócio e validação das métricas.
+**`Gabriel Santos (Analista de TI)`**: Estrutura dos dados e relacionamento entre tabelas.
 
 # 11. Construção do Backlog de Tarefas
 
 Construção do backlog das macroentregas:
 
 | Requisito | Entrega | Descrição |
-|___________| _______ | _________ |
+|-----------| ------- | --------- |
 | R01 | Planejamento Inicial | Reuniões com patrocinadores e equipe para revisão e validação do escopo.|
 | R02 | Modelagem do Data Warehouse | Criar o modelo conceitual de dimensões e fatos. Validar o modelo com as perguntas de negócio.|
 | R03 | Configuração do Ambiente | Configurar Snowflake e dbt Cloud, importar dados brutos no schema raw_adventure_works.|
