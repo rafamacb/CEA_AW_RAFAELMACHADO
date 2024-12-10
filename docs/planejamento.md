@@ -7,11 +7,13 @@ Criar uma infrestrutura moderna de analytics para a Adventure Works, que permita
 3. Garantir a qualidade e veracidade dos dados, atendendo às expectativas de confiabilidade da diretoria;
 4. Suportar a transição da empresa para uma cultura data-driven, com base no Modern Analytivs Stack.
 
+
 # 2. Orçamento
 
 Considerando as ferramentas sugeridas no desafio, é rezoável assumir um investimento moderado inicial para infraestutura e licenças, uma vez que serão utilizadas ferramentas, tal como, `Snowflake`, `dbt` e `Power BI`.
 
 O orçamento também deverá considerar o tempo dos profissionais envolvidos, incluindo Gabriel Santos (Analista de TI), além de treinamentos ou consultorias, se for necessário.
+
 
 # 3. Ferramentas
 
@@ -23,6 +25,7 @@ Ferramentas disponíveis:
 * **`Power BI`**: Para criar dashboard interativo;
 * **`Github`**: Para versionamento de código.
 
+
 # 4. Equipe:
 
 Colaboradores responsáveis pelo desenvolvimento do projeto:
@@ -30,6 +33,7 @@ Colaboradores responsáveis pelo desenvolvimento do projeto:
 **`Gabriel Silva`**: Analista de TI responsável por garantir acesso aos dados.
 
 **`Rafael Machado`**: Engenheiro de Analytcis responsável pelo desenvolvimento do projeto, tal como, modelagem, transformação dos dados e dashboards.
+
 
 # 5. Usuários de negócio
 
@@ -39,6 +43,7 @@ Usuários responsáveis por fornecer informações referentes as regras de negó
 
 **`João Muller`**: Diretor de inovação e idealizador do projeto.
 
+
 # 6. Patrocinadores
 
 **`Carlos Silveira`**: CEO que é o principal patrocinador e que toma as decisões. Comprometido com a visão de tornar a Adventure Works uma empresa data-driven.
@@ -46,6 +51,7 @@ Usuários responsáveis por fornecer informações referentes as regras de negó
 Exige garantia da qualidade e confiabilidade dos dados, pricipalmente para validar métrica de vendas brutas de 2011.
 
 **`João Muller`**: Idealizador do projeto e aliado estratégico. Tem alto nível de decisão e poderá ajudar com possíveis resistências das área comercial.
+
 
 # 7. Definição do Escopo do Projeto
 
@@ -66,6 +72,7 @@ O escopo delimita o que será entregue no projeto:
 1. Integração de dados futuros (ex.: dados de CRM ou Web Analytics).
 2. Processos que não pertencem a área de vendas.
 
+
 # 8. Participação dos Patrocinadores e Equipe
 
 É essencial reunir as principais partes interessadas para garantir alinhamento desde o início:
@@ -84,6 +91,7 @@ O escopo delimita o que será entregue no projeto:
 
 **`Silvana Teixeira (Diretora Comercial)`**: Fornecer informações sobre as regras de negócio e alinhar o escopo com as necessidades da área de vendas.
 
+
 # 9. Identificação das Fontes de Dados Principais
 
 Fontes de dados disponíveis:
@@ -92,6 +100,7 @@ Fontes de dados disponíveis:
 **`CRM (Salesforce)`**: Informações sobre interações com clientes (não essencial neste escopo inicial).
 **`Bancos de Dados Transacionais (PostgreSQL)`**: Fonte dos dados principais do desafio, incluindo schemas de vendas, produção, recursos **humanos e compras.
 **`Web Analytics (Google Analytics)`**: Dados futuros, fora do escopo atual.
+
 
 # 10. Identificação das Fontes de Informação sobre o Negócio
 
@@ -108,19 +117,21 @@ Para entender as regras de negócio e alinhar as métricas às expectativas:
 **`Silvana Teixeira (Diretora Comercial)`**: Regras de negócio e validação das métricas.
 **`Gabriel Santos (Analista de TI)`**: Estrutura dos dados e relacionamento entre tabelas.
 
+
 # 11. Construção do Backlog de Tarefas
 
 Construção do backlog das macroentregas:
 
-| Requisito | Entrega | Descrição |
+| **Requisito** | **Entrega** | **Descrição** |
 |-----------| ------- | --------- |
-| R01 | Planejamento Inicial | Reuniões com patrocinadores e equipe para revisão e validação do escopo.|
-| R02 | Modelagem do Data Warehouse | Criar o modelo conceitual de dimensões e fatos. Validar o modelo com as perguntas de negócio.|
-| R03 | Configuração do Ambiente | Configurar Snowflake e dbt Cloud, importar dados brutos no schema raw_adventure_works.|
-| R04 | Transformação de Dados | Criar tabelas de fatos e dimensões no dbt. Testar e documentar os modelos criados.|
-| R05 | Criação de Dashboards | Desenvolver visualizações interativas e validar com usuários de negócio.|
-| R06 | Apresentação e Entrega Final | Gravar vídeo demonstrando as etapas do projeto.|
-| R07 | Revisão para entrega do projeto | Revisar materiais e gerar o arquivo para envio.|
+| **R01** | Planejamento Inicial | Reuniões com patrocinadores e equipe para revisão e validação do escopo.|
+| **R02** | Modelagem do Data Warehouse | Criar o modelo conceitual de dimensões e fatos. Validar o modelo com as perguntas de negócio.|
+| **R03** | Configuração do Ambiente | Configurar Snowflake e dbt Cloud, importar dados brutos no schema raw_adventure_works.|
+| **R04** | Transformação de Dados | Criar tabelas de fatos e dimensões no dbt. Testar e documentar os modelos criados.|
+| **R05** | Criação de Dashboards | Desenvolver visualizações interativas e validar com usuários de negócio.|
+| **R06** | Apresentação e Entrega Final | Gravar vídeo demonstrando as etapas do projeto.|
+| **R07** | Revisão para entrega do projeto | Revisar materiais e gerar o arquivo para envio.|
+
 
 # 12. Importância do Projeto e os benefícios do patrocínio da Alta Gerência
 
@@ -142,8 +153,29 @@ O sucesso do projeto depende do apoio das lideranças. Por este motivo, deve ser
 - Melhoria contínua das operações comerciais.
 
 
+# 13. Perguntas de Negócio e Métricas
+
+As perguntas a serem respondidas:
+
+| **Pergunta de Negócio**                                         | **Métricas Necessárias**                                             |
+|---------------------------------------------------------------- |----------------------------------------------------------------------|
+| Número de pedidos, quantidade comprada e valor total negociado. | Número de pedidos, Quantidade comprada, Valor total negociado.       |
+| Produtos com maior ticket médio.                                | Ticket médio = (Faturamento bruto - descontos) / Número de pedidos.  |
+| Melhores clientes por valor total negociado.                    | Valor total negociado por cliente.                                   |
+| Melhores cidades por valor total negociado.                     | Valor total negociado por cidade.                                    |
+| Número de pedidos por mês e ano.                                | Número de pedidos, Quantidade comprada, Valor total negociado.       |
+| Produto com maior quantidade para motivo "Promotion".           | Quantidade comprada por produto.                                     |
 
 
+# 14. Cronograma do Projeto
 
-
+| **Requisito** | **Entrega** | **Prazo Início** | **Prazo Final** |
+|---------------|------------ |------------------|-----------------|
+| **R01** | Planejamento Inicial |  08/12/2024 | 11/12/2024 |
+| **R02** | Modelagem do Data Warehouse | 12/12/2024 | 13/12/2024 |
+| **R03** | Configuração do Ambiente | 14/12/2024 | 15/12/2024 |
+| **R04** | Transformação de Dados | 16/12/2024 | 23/12/2024 |
+| **R05** | Criação de Dashboards |  24/12/2024 | 31/12/2024 |
+| **R06** | Apresentação e Entrega Final | 01/01/2025 | 02/01/2025 |
+| **R07** | Revisão para entrega do projeto | 03/01/2025 | 04/01/2025 |
 
