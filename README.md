@@ -1,3 +1,4 @@
+
 # cea_aw_rafaelmachado
 `Repositório para documentar certificação de Engenharia de Analytics da Indicium Academy`
 
@@ -12,7 +13,7 @@ Este projeto visa criar uma infrestrutura moderna de analytics para a Adventure 
 
 | Etapa         | Atividades |
 |  :----:   | ----------- |
-| ETAPA 1         |[Planejamento]() <br> |
+| ETAPA 1         |[Planejamento](docs/planejamento.md) <br> |
 | ETAPA 2         |[Design]() <br> |
 | ETAPA 3         |[Implementação]() |
 | ETAPA 4         |[Deploy]() <br>  |
