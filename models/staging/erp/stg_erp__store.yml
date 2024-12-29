@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__store
+    description: Table for preparing raw data related to stores.
+    columns:
+      - name: pk_store
+        description: Primary key that uniquely identifies each store in the table.
+      
+      - name: name_store
+        description: Name of the store, representing the official or registered name.

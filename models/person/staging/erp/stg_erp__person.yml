@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: Table for preparing raw data of customer-related individuals.
+    columns:
+      - name: pk_person
+        description: Primary key that uniquely identifies each person in the table.
+      
+      - name: person_type
+        description: Indicates the category or role of the individual, such as employee, customer, or vendor.
+      
+      - name: name_style
+        description: Flag indicating if the person's name follows a specific format (e.g., Western or Eastern name styles).
+      
+      - name: formatted_name
+        description: Full name of the individual, formatted based on naming conventions or preferences.
