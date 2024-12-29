@@ -21,5 +21,13 @@ sources:
             tests:
               - unique
               - not_null 
-                  
+
+      - name: creditcard
+        description: Tabela fonte com informações de cartões de crédito da Adventure Works
+        columns:
+          - name: creditcardid 
+            tests:
+              - unique
+              - not_null 
+
                   

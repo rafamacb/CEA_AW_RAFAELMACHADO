@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_credit_card
+    description: Dimension table from Credit Card.
+    columns:
+      - name: pk_credit_card
+        description: Primary key that uniquely identifies each credit card in the table.
+        tests:
+          - unique
+          - not_null
+          
+      - name: card_type
+        description: Indicates the type of credit card (e.g., Visa, MasterCard, Amex).
+  
