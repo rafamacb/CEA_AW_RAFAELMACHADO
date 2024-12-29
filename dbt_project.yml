@@ -40,9 +40,7 @@ models:
     # Applies to all files under models/example/
 
     person:
-      +materialized: table
-      intermediate: 
-        +materialized: view  
+      +materialized: table  
       staging:
         +materialized: view   
 
