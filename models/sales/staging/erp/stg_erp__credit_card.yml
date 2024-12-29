@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_erp__credit_card
+    description: Table for preparing raw data related to credit cards.
+    columns:
+      - name: pk_credit_card
+        description: Primary key that uniquely identifies each credit card in the table.
+      
+      - name: card_type
+        description: Indicates the type of credit card (e.g., Visa, MasterCard, Amex).
+
+
