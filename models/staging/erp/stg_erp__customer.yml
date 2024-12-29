@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_erp__customer
+    description: Customer table raw data preparation table.
+    columns:
+      - name: PK_CUSTOMER
+        description: Primary key that uniquely identifies each customer in the table.
+      
+      - name: FK_PERSON
+        description: Foreign key that references the 'Person' entity, indicating which individual the customer is associated with.
+      
+      - name: FK_STORE
+        description: Foreign key that references the 'Store' entity, indicating which store the customer is associated with. Null for individual customers.
+      
+      - name: FK_TERRITORY
+        description: Foreign key that references the sales territory, indicating the region to which the customer belongs.
+
+

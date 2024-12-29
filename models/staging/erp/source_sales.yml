@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: erp_adventure_works
+    description: Sistema de dados de venda da Adventure Works.
+    database: FEA24_9
+    schema: RAW_ADVENTURE_WORKS 
+    tables:
+      - name: customer
+        description: Tabela fonte com informações dos clientes da Adventure Works.
+        columns:
+          - name: customerid
+            tests:
+              - unique
+              - not_null
+
+      - name: store
+        description: Tabela fonte com informações das lojas da Adventure Works
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null 
+                  
+                  
