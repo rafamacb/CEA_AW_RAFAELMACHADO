@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__product_category
+    description: Table for preparing raw data related to product categories, including their classification and relationship to categories.
+    columns:
+      - name: pk_product_category
+        description: Primary key that uniquely identifies each product category in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: category_name
+        description: Name of the category, representing its official designation.

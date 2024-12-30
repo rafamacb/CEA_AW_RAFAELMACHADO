@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_erp__product_subcategory
+    description: Table for preparing raw data related to product subcategories, including their classification and relationship to categories.
+    columns:
+      - name: pk_product_subcategory
+        description: Primary key that uniquely identifies each product subcategory in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_product_category
+        description: Foreign key that references the category to which the subcategory belongs.
+
+      - name: subcategory_name
+        description: Name of the subcategory, representing its official designation.
