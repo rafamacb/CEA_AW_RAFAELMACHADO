@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_erp__address
+    description: Table for preparing raw data of customer and business address information.
+    columns:
+      - name: pk_address
+        description: Primary key that uniquely identifies each address in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_state_province
+        description: Foreign key that references the state or province to which the address belongs.
+
+      - name: address
+        description: Street address or location details, representing the full address of a customer or business.
+
+      - name: city_name
+        description: City name details, representing the name of city of the address.
+
+
+
+     

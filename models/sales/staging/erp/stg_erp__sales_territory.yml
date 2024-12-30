@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__sales_territory
+    description: Table for preparing raw data related to sales territories, including regional and continental groupings.
+    columns:
+      - name: pk_territory
+        description: Primary key that uniquely identifies each sales territory in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_country_region
+        description: Foreign key that references the country or region to which the sales territory belongs.
+
+      - name: territory_name
+        description: Name of the sales territory, representing the official designation.
+
+      - name: continent_name
+        description: Name of the continent or regional grouping to which the sales territory is associated.
