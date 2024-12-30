@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: erp_adventure_works
+    description: Sistema de dados de venda da Adventure Works.
+    database: FEA24_9
+    schema: RAW_ADVENTURE_WORKS 
+    tables:
+
+    - name: product
+      description: Tabela fonte com informações de cartões de crédito da Adventure Works
+      columns:
+        - name: PRODUCTID
+          tests:
+            - unique
+            - not_null 
+
+    - name: productsubcategory
+      description: Tabela fonte com informações de cartões de crédito da Adventure Works
+      columns:
+        - name: PRODUCTSUBCATEGORYID
+          tests:
+            - unique
+            - not_null 
+
+    - name: productcategory
+      description: Tabela fonte com informações de cartões de crédito da Adventure Works
+      columns:
+        - name: PRODUCTCATEGORYID
+          tests:
+            - unique
+            - not_null 

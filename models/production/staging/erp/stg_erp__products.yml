@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_erp__products
+    description: Table for preparing raw data related to products, including pricing, cost, and categorization.
+    columns:
+      - name: pk_product
+        description: Primary key that uniquely identifies each product in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_product_subcategory
+        description: Foreign key that references the subcategory to which the product belongs.
+
+      - name: product_name
+        description: Name of the product, representing its official designation.
+
+      - name: product_line
+        description: Code or category that classifies the product into a specific product line.
+      
+      - name: productline_description
+        description: Name category that classifies the product into a specific product line.
+
+      - name: product_cost
+        description: Standard cost associated with the product, reflecting production or acquisition costs.
+
+      - name: product_price
+        description: List price of the product, representing the suggested retail price.
+
