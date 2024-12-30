@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__country_region
+    description: Table for preparing raw data of country and region information.
+    columns:
+      - name: pk_country_region
+        description: Primary key that references the country or regional.
+        tests:
+          - unique
+          - not_null
+
+      - name: country_region_name
+        description: propertie that references thename of country or regional.

@@ -1,0 +1,44 @@
+
+version: 2
+
+models:
+  - name: int_territory
+    description: >
+      Intermediate table that consolidates data from territories, countries, provinces, and addresses.
+      This table is created by joining the tables stg_address, stg_province, stg_country, and stg_territory.
+    columns:
+      - name: pk_address
+        description: Primary key for the address. Comes from the stg_address table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_state_province
+        description: Foreign key for the province. 
+        
+      - name: fk_country_region
+        description: Foreign key for the country/region.
+
+      - name: fk_territory
+        description: Foreign key for the territory.
+
+      - name: address
+        description: Full address from the stg_address table.
+
+      - name: city_name
+        description: City name from the stg_address table.
+      
+      - name: province_name
+        description: Name of the province associated with the address.
+
+      - name: country_region_name
+        description: Name of the country or region associated with the province and territory.
+      
+      - name: territory_name
+        description: Name of the territory associated with the country or region.
+
+      - name: continent_name
+        description: Name of the continent to which the territory belongs.
+
+
+ 

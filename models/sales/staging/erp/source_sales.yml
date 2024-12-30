@@ -30,4 +30,12 @@ sources:
               - unique
               - not_null 
 
+      - name: salesterritory
+        description: Tabela fonte com informações de cartões de crédito da Adventure Works
+        columns:
+          - name: territoryid
+            tests:
+              - unique
+              - not_null 
+
                   

@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_erp__state_province
+    description: Table for preparing raw data of state and province information.
+    columns:
+      - name: pk_province
+        description: Primary key that uniquely identifies each state or province in the table.
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_country_region
+        description: Foreign key that references the country or regional code to which the state or province belongs.
+        
+
+      - name: fk_territory
+        description: Foreign key that references the territory code to which the state or province belongs.
+
+      - name: name_province
+        description: Name of the state or province, representing the official designation.
+
+
+     

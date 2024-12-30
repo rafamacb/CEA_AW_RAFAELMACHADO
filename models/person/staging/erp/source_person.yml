@@ -2,14 +2,38 @@ version: 2
 
 sources:
   - name: erp_adventure_works
-    description: Sistema de dados de venda da Adventure Works.
+    description: Adventure Works sales data system.
     database: FEA24_9
     schema: RAW_ADVENTURE_WORKS 
     tables:
       - name: person
-        description: Tabela fonte com informações de pessoas da Adventure Works.
+        description: Source table with information about people at Adventure Works.
         columns:
           - name: businessentityid
+            tests:
+              - unique
+              - not_null
+
+      - name: address  
+        description: Adventure Works source table with people's address information.
+        columns:
+          - name: addressid
+            tests:
+              - unique
+              - not_null
+      
+      - name: stateprovince  
+        description: Adventure Works source table with people's address information.
+        columns:
+          - name: stateprovinceid
+            tests:
+              - unique
+              - not_null
+
+      - name: countryregion
+        description: Adventure Works source table with people's address information.
+        columns:
+          - name: countryregioncode
             tests:
               - unique
               - not_null
