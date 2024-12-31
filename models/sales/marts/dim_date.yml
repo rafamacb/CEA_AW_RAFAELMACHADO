@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: >
+      Dimension table that provides calendar-based attributes for reporting and analysis. 
+      This table supports time-based comparisons, including month, quarter, and year aggregations.
+      
+    
