@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_erp__date
+    description: Table for preparing raw data related to order dates. Was used the dbt_date package. and the get_date_dimension function.
+    
+
+      

@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: int_date
+    description: >
+      Intermediate table that provides calendar-based attributes for reporting and analysis. 
+      This table supports time-based comparisons, including month, quarter, and year aggregations.
+      
+    columns:
+      - name: sk_date
+        description: Created SK for date using DATE_DAY and DAY_OF_WEEK_NAME attributes.
+        tests:
+          - unique
+          - not_null
+              
+  
+
+      
