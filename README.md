@@ -14,7 +14,7 @@ Este projeto visa criar uma infrestrutura moderna de analytics para a Adventure 
 | Etapa         | Atividades |
 |  :----:   | ----------- |
 | ETAPA 1         |[Planejamento](docs/planejamento.md) <br> |
-| ETAPA 2         |[Design]() <br> |
+| ETAPA 2         |[Design](docs/design.md) <br> |
 | ETAPA 3         |[Implementação]() |
 | ETAPA 4         |[Deploy]() <br>  |
 
