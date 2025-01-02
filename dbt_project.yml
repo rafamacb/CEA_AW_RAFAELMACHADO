@@ -42,8 +42,14 @@ models:
     person:
       +materialized: table  
       staging:
-        +materialized: view   
+        +materialized: view  
 
+    production:
+      +materialized: table
+      intermediate: 
+        +materialized: view
+      staging:
+        +materialized: view 
 
     sales:
       +materialized: table
@@ -51,4 +57,6 @@ models:
         +materialized: view
       staging:
         +materialized: view
+    
+    
     

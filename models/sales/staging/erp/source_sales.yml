@@ -39,12 +39,27 @@ sources:
               - not_null 
 
       - name: salesorderheader
-        description: Tabela fonte com informações de cartões de crédito da Adventure Works
+        description: Tabela fonte com informações das ordens de venda da Adventure Works
         columns:
           - name: salesorderid
             tests:
               - unique
               - not_null 
+
+      - name: salesorderdetail
+        description: Tabela fonte com informações dos detalhes das ordens da Adventure Works.
+        columns:
+          - name: salesorderid
+            tests:
+              - not_null
+
+      - name: salesreason
+        description: Tabela fonte com informações dos motivos de venda das ordens de venda.
+        columns:
+          - name: salesreasonid
+            tests:
+              - unique
+              - not_null
 
       
 

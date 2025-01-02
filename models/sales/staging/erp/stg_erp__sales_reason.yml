@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_erp__sales_reason
+    description: Model that transforms sales reason data from the 'salesreason' source of the ERP Adventure Works
+    columns:
+      - name: pk_sales_reason
+        description: Primary key for the sales reason. Uniquely identifies each sales reason
+        tests:
+          - unique
+          - not_null
+
+      - name: sales_reason
+        description: Name or description of the sales reason. Cast to varchar for consistency
+        
+          

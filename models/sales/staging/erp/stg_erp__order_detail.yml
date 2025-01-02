@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_erp__order_detail
+    description: Model that transforms sales order detail data from the 'salesorderdetail' source of the ERP Adventure Works
+    columns:
+      - name: pk_sales_order_detail
+        description: Primary key for the order detail. Uniquely identifies each line item in the order
+        tests:
+          - not_null
+
+      - name: fk_sales_order
+        description: Foreign key that references the main order in the sales order header table (salesorderheader)
+        
+
+      - name: fk_product
+        description: Foreign key that references the product associated with this order
+        
+
+      - name: order_quantity
+        description: Quantity of product units included in the order
+        
+
+      - name: unit_price
+        description: Unit price of the product at the time of the order. Value in monetary format with a precision of 4 decimal places
+        
+
+      - name: unit_price_discount
+        description: Amount of discount applied to the unit price of the product. Can be zero if no discount is applied
