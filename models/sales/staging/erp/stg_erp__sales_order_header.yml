@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: stg_erp__sales_order_header
+    description: Model that transforms sales order header data from the 'salesorderheader' source of the ERP Adventure Works
+    columns:
+      - name: pk_sales_order
+        description: Primary key for the sales order. Uniquely identifies each sales order
+        tests:
+          - unique
+          - not_null
+
+      - name: fk_customer
+        description: Foreign key that references the customer who placed the order
+        tests:
+          - not_null
+          
+
+      - name: fk_credit_card
+        description: Foreign key that references the credit card used for the order. Can be null if no credit card was used
+        
+
+      - name: fk_order_detail
+        description: Foreign key that references the details of the sales order
+        
+
+      - name: fk_ship_to_address
+        description: Foreign key that references the shipping address for the order
+        
+
+      - name: fk_status
+        description: Foreign key representing the current status of the order
+        
+
+      - name: order_date
+        description: Date that order was due.
+        
+
+      - name: order_status
+        description: Status of the order, represented as an integer
+        
+
+      - name: order_status_description
+        description: Descriptive label for the order status (e.g., in_process, approved, shipped)
+        
+
+      - name: is_online_order
+        description: Flag indicating if the order was placed online (1 for online, 0 for physical)
+        
+
+      - name: sales_type
+        description: Describes the type of sale - 'Online' or 'Physical' based on the online order flag
+       
+
+      - name: freight
+        description: Shipping cost associated with the order
+        
+
+      - name: tax
+        description: Amount of tax applied to the order
+        
+
+      - name: order_subtotal
+        description: Subtotal of the order, representing the sum before tax and freight
+        
+
+      - name: order_total_due
+        description: Total amount due for the order, including tax and freight
+        
