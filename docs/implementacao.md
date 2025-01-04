@@ -1,6 +1,6 @@
 # 1. Ingestão de Dados
 
-A etapa de ingestão de dados consiste em extrair, transformar e carregar (ETL) informações de diferentes sistemas e plataformas utilizadas pela Adventure Works. As fontes de dados incluem sistemas de gestão empresarial (ERP), gestão de relacionamento com o cliente (CRM), análises web e plataformas de gerenciamento de conteúdo:
+A etapa de ingestão de dados consiste em extrair, carregar e transformar (ELT)  as informações de diferentes sistemas e plataformas utilizadas pela Adventure Works. As fontes de dados incluem sistemas de gestão empresarial (ERP), gestão de relacionamento com o cliente (CRM), análises web e plataformas de gerenciamento de conteúdo:
 
 ## Arquitetura do DW:
 
