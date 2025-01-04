@@ -9,7 +9,7 @@ Este projeto visa criar uma infrestrutura moderna de analytics para a Adventure 
 3. Garantir a qualidade e veracidade dos dados, atendendo às expectativas de confiabilidade da diretoria;
 4. Suportar a transição da empresa para uma cultura data-driven, com base no Modern Analytivs Stack.
 
-# Planejamento
+# Etapas do projeto
 
 | Etapa         | Atividades |
 |  :----:   | ----------- |
