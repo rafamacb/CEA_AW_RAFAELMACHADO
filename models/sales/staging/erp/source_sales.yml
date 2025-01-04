@@ -1,13 +1,13 @@
-version: 2
+version: 2 
 
 sources:
   - name: erp_adventure_works
-    description: Sistema de dados de venda da Adventure Works.
+    description: Adventure Works sales data system.
     database: FEA24_9
     schema: RAW_ADVENTURE_WORKS 
     tables:
       - name: customer
-        description: Tabela fonte com informações dos clientes da Adventure Works.
+        description: Source table with information about Adventure Works customers.
         columns:
           - name: customerid
             tests:
@@ -15,7 +15,7 @@ sources:
               - not_null
 
       - name: store
-        description: Tabela fonte com informações das lojas da Adventure Works
+        description: Source table with information about Adventure Works stores.
         columns:
           - name: businessentityid
             tests:
@@ -23,7 +23,15 @@ sources:
               - not_null 
 
       - name: creditcard
-        description: Tabela fonte com informações de cartões de crédito da Adventure Works
+        description: Source table with information about Adventure Works credit cards.
+        columns:
+          - name: creditcardid 
+            tests:
+              - unique
+              - not_null 
+
+      - name: personcreditcard
+        description: Source table with information about Adventure Works credit cards.
         columns:
           - name: creditcardid 
             tests:
@@ -31,7 +39,7 @@ sources:
               - not_null 
 
       - name: salesterritory
-        description: Tabela fonte com informações de cartões de crédito da Adventure Works
+        description: Source table with information about Adventure Works sales territories.
         columns:
           - name: territoryid
             tests:
@@ -39,7 +47,7 @@ sources:
               - not_null 
 
       - name: salesorderheader
-        description: Tabela fonte com informações das ordens de venda da Adventure Works
+        description: Source table with information about Adventure Works sales orders.
         columns:
           - name: salesorderid
             tests:
@@ -47,21 +55,23 @@ sources:
               - not_null 
 
       - name: salesorderdetail
-        description: Tabela fonte com informações dos detalhes das ordens da Adventure Works.
+        description: Source table with information about Adventure Works sales order details.
         columns:
           - name: salesorderid
             tests:
               - not_null
 
       - name: salesreason
-        description: Tabela fonte com informações dos motivos de venda das ordens de venda.
+        description: Source table with information about sales reasons for sales orders.
         columns:
           - name: salesreasonid
             tests:
               - unique
               - not_null
 
-      
-
-
-                  
+      - name: salesorderheadersalesreason
+        description: Source table with information about sales reasons for sales orders.
+        columns:
+          - name: salesorderid
+            tests:
+              - not_null

@@ -6,6 +6,9 @@ models:
     columns:
       - name: pk_store
         description: Primary key that uniquely identifies each store in the table.
-      
+        tests:
+          - unique
+          - not_null
+              
       - name: name_store
         description: Name of the store, representing the official or registered name.
