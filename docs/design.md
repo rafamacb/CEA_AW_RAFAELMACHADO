@@ -34,10 +34,6 @@
 Através do modelo relacional, podemos identificar e avalizar com o modelo do banco de dados foi projetado originalmente:
 ![Modelo Relacional](img/ea_modelo_relacional.png)
 
-## **2.2 Modelo Conceitual**
-
-Analisado o modelo relacional, foi prjetado o modelo conceitual, definindo tabelas fato e dimensão:
-![Modelo conceitual](img/ea_modelo_conceitual.jpg)
 
 
 

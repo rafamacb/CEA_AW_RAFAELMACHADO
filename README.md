@@ -15,8 +15,8 @@ Este projeto visa criar uma infrestrutura moderna de analytics para a Adventure 
 |  :----:   | ----------- |
 | ETAPA 1         |[Planejamento](docs/planejamento.md) <br> |
 | ETAPA 2         |[Design](docs/design.md) <br> |
-| ETAPA 3         |[Implementação]() |
-| ETAPA 4         |[Deploy]() <br>  |
+| ETAPA 3         |[Implementação](docs/implementacao.md) |
+| ETAPA 4         |[Deploy](docs/deploy.md) <br>  |
 
 ## Instruções de utilização
 
@@ -24,9 +24,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="models"> Código Fonte</a></li>
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="docs/presentation.md"> Apresentação da solução</a></li>
 
