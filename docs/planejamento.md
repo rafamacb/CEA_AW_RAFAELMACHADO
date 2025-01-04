@@ -96,10 +96,10 @@ O escopo delimita o que será entregue no projeto:
 
 Fontes de dados disponíveis:
 
-**`ERP (SAP)`**: Dados de pedidos, vendas, produtos e clientes.
-**`CRM (Salesforce)`**: Informações sobre interações com clientes (não essencial neste escopo inicial).
-**`Bancos de Dados Transacionais (PostgreSQL)`**: Fonte dos dados principais do desafio, incluindo schemas de vendas, produção, recursos **humanos e compras.
-**`Web Analytics (Google Analytics)`**: Dados futuros, fora do escopo atual.
+- **`ERP (SAP)`**: Dados de pedidos, vendas, produtos e clientes.
+- **`CRM (Salesforce)`**: Informações sobre interações com clientes (não essencial neste escopo inicial).
+- **`Bancos de Dados Transacionais (PostgreSQL)`**: Fonte dos dados principais do desafio, incluindo schemas de vendas, produção, recursos **humanos e compras.
+- **`Web Analytics (Google Analytics)`**: Dados futuros, fora do escopo atual.
 
 
 # 10. Identificação das Fontes de Informação sobre o Negócio
@@ -159,12 +159,12 @@ As perguntas a serem respondidas:
 
 | **Pergunta de Negócio**                                         | **Métricas Necessárias**                                             |
 |---------------------------------------------------------------- |----------------------------------------------------------------------|
-| Número de pedidos, quantidade comprada e valor total negociado. | Número de pedidos, Quantidade comprada, Valor total negociado.       |
-| Produtos com maior ticket médio.                                | Ticket médio = (Faturamento bruto - descontos) / Número de pedidos.  |
-| Melhores clientes por valor total negociado.                    | Valor total negociado por cliente.                                   |
-| Melhores cidades por valor total negociado.                     | Valor total negociado por cidade.                                    |
-| Número de pedidos por mês e ano.                                | Número de pedidos, Quantidade comprada, Valor total negociado.       |
-| Produto com maior quantidade para motivo "Promotion".           | Quantidade comprada por produto.                                     |
+| Qual o número de pedidos, quantidade comprada, valor total negociado por produto, tipo de cartão, motivo de venda, data de venda, cliente, status, cidade, estado e país? | Número de pedidos, Quantidade comprada, Valor total negociado.       |
+| Quais os produtos com maior ticket médio por mês, ano, cidade, estado e país? (ticket médio = Faturamento bruto - descontos do produto / número de pedidos no período de análise)                                | Ticket médio = (Faturamento bruto - descontos) / Número de pedidos.  |
+| Quais os 10 melhores clientes por valor total negociado filtrado por produto, tipo de cartão, motivo de venda, data de venda, status, cidade, estado e país?                  | Valor total negociado por cliente.                                   |
+| Quais as 5 melhores cidades em valor total negociado por produto, tipo de cartão, motivo de venda, data de venda, cliente, status, cidade, estado e país?                    | Valor total negociado por cidade.                                    |
+| Qual o número de pedidos, quantidade comprada, valor total negociado por mês e ano?                           | Número de pedidos, Quantidade comprada, Valor total negociado.       |
+| Qual produto tem a maior quantidade de unidades compradas para o motivo de venda “Promotion”?           | Quantidade comprada por produto.                                     |
 
 
 # 14. Cronograma do Projeto
