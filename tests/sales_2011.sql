@@ -6,11 +6,11 @@
 
 with
     sales_in_2011 as (
-        select sum(net_value) as net_value
+        select sum(gross_value) as gross_value
         from {{ ref('int_sales_orders') }}
         where order_date between '2011-01-01' and '2011-12-31'
     ) 
 
-select net_value
+select gross_value
 from sales_in_2011
-where net_value not between 12646112.15 and 12646112.17
+where gross_value not between 12646112.15 and 12646112.17
