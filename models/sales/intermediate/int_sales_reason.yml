@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_sales_reason
+    description: >
+      Intermediate table that aggregates sales reasons for each sales order in the Adventure Works ERP system.
+      This model consolidates multiple sales reasons associated with a single sales order by performing a string aggregation
+      (LISTAGG) to combine them into a comma-separated list.
+    columns:
+      - name: pk_sales_order
+        description: >
+          Primary key representing the unique identifier for each sales order.
+          This key links to the main sales order table and is used to join aggregated sales reasons.
+        tests:
+          - unique
+          - not_null
+
+      - name: sales_reason
+        description: >
+          Aggregated list of sales reasons associated with the sales order.
+          If no specific reason is available, the value defaults to 'Unknown reason'.
+        tests:
+          - not_null

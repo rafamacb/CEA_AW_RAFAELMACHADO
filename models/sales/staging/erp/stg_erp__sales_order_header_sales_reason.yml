@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_erp__sales_order_header_sales_reason
+    description: >
+      This model extracts and transforms data from the `salesorderheadersalesreason` source table in the Adventure Works ERP system.
+      It selects the `salesorderid` as the primary key for the sales order and the `salesreasonid` as the foreign key representing the sales reason.
+      The resulting table maps sales orders to their corresponding sales reasons, providing insights into the rationale behind sales activities.
+      
+    columns:
+      - name: pk_sales_order
+        description: >
+          Primary key representing the unique identifier for each sales order.
+        tests:
+          - not_null
+
+      - name: fk_sales_reason
+        description: >
+          Foreign key representing the reason associated with the sales order.
+          This field links to the `salesreason` table, providing contextual information about the sales order rationale.
+        tests:
+          - not_null

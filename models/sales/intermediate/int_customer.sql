@@ -1,35 +1,35 @@
-with 
-    customer as ( 
-        select *
-        from {{ ref('stg_erp__customer') }}
-    )
+WITH 
+    customer AS ( 
+        SELECT *
+        FROM {{ ref('stg_erp__customer') }}
+    ),
 
-    , person as (
-        select *
-        from {{ ref('stg_erp__person') }}
-    )
+    person AS (
+        SELECT *
+        FROM {{ ref('stg_erp__person') }}
+    ),
 
-    , store as (
-        select *
-        from {{ ref('stg_erp__store') }}
-    )
+    store AS (
+        SELECT *
+        FROM {{ ref('stg_erp__store') }}
+    ),
 
-    , dim_customer as (
-        select
+    dim_customer AS (
+        SELECT
             customer.pk_customer
             , customer.fk_person
             , customer.fk_store
             , customer.fk_territory
-            , person.person_type     
+            , person.person_type
             , person.formatted_name
-            , store.name_store
-        from customer
-            left join person 
-                on customer.fk_person = person.pk_person
-            left join store 
-                on customer.fk_store = store.pk_store
-       
+            , COALESCE(store.name_store, 'Unknown Store') AS name_store
+        FROM customer
+            LEFT JOIN person 
+                ON customer.fk_person = person.pk_person
+            LEFT JOIN store 
+                ON customer.fk_store = store.pk_store
     )
 
-select *
-from dim_customer
+SELECT *
+FROM dim_customer
+

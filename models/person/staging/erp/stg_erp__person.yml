@@ -6,7 +6,7 @@ models:
     columns:
       - name: pk_person
         description: Primary key that uniquely identifies each person in the table.
-      
+              
       - name: person_type
         description: Indicates the category or role of the individual, such as employee, customer, or vendor.
       

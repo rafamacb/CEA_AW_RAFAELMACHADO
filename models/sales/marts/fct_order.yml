@@ -2,82 +2,76 @@ version: 2
 
 models:
   - name: fct_order
-    description: Imtermediate table that consolidates sales order data, combining details from orders, products, customers, and transactions in the ERP Adventure Works
+    description: Fact table that consolidates sales order data, combining details from orders, products, customers, and transactions in the ERP Adventure Works.
     columns:
       - name: pk_sales_order
-        description: Primary key for the sales order. Uniquely identifies each sales order
+        description: Primary key for the sales order. Uniquely identifies each sales order.
 
       - name: fk_order_detail
-        description: Foreign key that references the specific line item or detail of the order
+        description: Foreign key that references the specific line item or detail of the order.
         
-
       - name: fk_product
-        description: Foreign key that references the product associated with the order line item
+        description: Foreign key that references the product associated with the order line item.
         
-
       - name: fk_customer
-        description: Foreign key that references the customer who placed the order
+        description: Foreign key that references the customer who placed the order.
         
-
       - name: fk_credit_card
-        description: Foreign key that references the credit card used for payment. Can be null if not used
+        description: Foreign key that references the credit card used for payment. Can be null if not used.
         
-
       - name: fk_ship_to_address
-        description: Foreign key that references the shipping address for the order
+        description: Foreign key that references the shipping address for the order.
         
-
       - name: fk_status
-        description: Foreign key representing the current status of the order
+        description: Foreign key representing the current status of the order.
 
       - name: fk_date
-        description: Foreign key representing the date day related to dim_dates
+        description: Foreign key representing the date day related to dim_dates.
         
-
       - name: order_date
-        description: Date when the order was placed
+        description: Date when the order was placed.
         
-
+      - name: sales_reason
+        description: Reason associated with the sales order, describing why the order was placed. 
+          If no reason is provided, it defaults to 'Uncategorized Reason'.
+        
+        
       - name: sales_type
-        description: Describes whether the sale was conducted online or physically
+        description: Describes whether the sale was conducted online or physically.
         
-
       - name: order_status_description
-        description: Textual description of the order's status (e.g., approved, shipped, cancelled)
+        description: Textual description of the order's status (e.g., approved, shipped, cancelled).
         
-
       - name: order_quantity
-        description: Quantity of products ordered in this line item
+        description: Quantity of products ordered in this line item.
         
-
       - name: unit_price
-        description: Unit price of the product at the time of the order
+        description: Unit price of the product at the time of the order.
        
-
       - name: unit_price_discount
-        description: Discount applied to the unit price of the product. Can be zero if no discount is applied
+        description: Discount applied to the unit price of the product. Can be zero if no discount is applied.
         
-
       - name: gross_value
-        description: Gross value of the order line item before discounts or taxes
+        description: Gross value of the order line item before discounts or taxes.
         
-
       - name: net_value
-        description: Net value of the order line item after applying discounts
+        description: Net value of the order line item after applying discounts.
        
-
       - name: tax
-        description: Amount of tax applied to the order line item
+        description: Amount of tax applied to the order line item.
         
-
       - name: freight
-        description: Freight or shipping cost associated with the order
+        description: Freight or shipping cost associated with the order.
         
-
       - name: order_subtotal
-        description: Subtotal of the order, representing the sum of all line items before tax and freight
+        description: Subtotal of the order, representing the sum of all line items before tax and freight.
+        
+      - name: order_total_due
+        description: Total amount due for the order, including taxes, freight, and any applied discounts.
         
 
-      - name: teve_desconto
-        description: Boolean indicator showing whether a discount was applied to the order (true = discount applied)
+      - name: credit_card_type
+        description: The type of credit card used for the order payment. Defaults to 'No Credit Card' if no credit card is associated with the order.
         
+      - name: teve_desconto
+        description: Boolean indicator showing whether a discount was applied to the order (true = discount applied).
