@@ -29,11 +29,11 @@ Os testes dos pipelines de produção garagem que que todos os modelos e testes 
 
 ## Versão para web
 
+Clique no link abaixo para ser direcoinado ao Dashboard
+
 <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMzA4ZTgxZTctMjkxYy00NDc4LWJhNzMtYjQ1OTFjZDhkMzMzIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"> Código Fonte</a></li>
 
- ## Versão in page
 
- <iframe title="Projeto Adventure Works" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMzA4ZTgxZTctMjkxYy00NDc4LWJhNzMtYjQ1OTFjZDhkMzMzIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
