@@ -18,30 +18,30 @@ clean-targets:
 
 models:
   dbt_adventure_works:
-    # Configuração global (por padrão, tudo é uma view)
+    # Global configuration (by default, everything is a view)
     +materialized: view  
 
-    # Configurações específicas por domínio de negócio
+    # Specific configurations by business domain
     person:
       staging:
-        +materialized: view  # Person Staging como view
+        +materialized: view  # Person Staging as view
       intermediate:
-        +materialized: view  # Person Intermediate como view
+        +materialized: view  # Person Intermediate as view
       marts:
-        +materialized: table  # Person Marts como tabela
+        +materialized: table  # Person Marts as table
 
     production:
       staging:
-        +materialized: view  # Production Staging como view
+        +materialized: view  # Production Staging as view
       intermediate:
-        +materialized: view  # Production Intermediate como view
+        +materialized: view  # Production Intermediate as view
       marts:
-        +materialized: table  # Production Marts como tabela
+        +materialized: table  # Production Marts as table
 
     sales:
       staging:
-        +materialized: view  # Sales Staging como view
+        +materialized: view  # Sales Staging as view
       intermediate:
-        +materialized: view  # Sales Intermediate como view
+        +materialized: view  # Sales Intermediate as view
       marts:
-        +materialized: table  # Sales Marts como tabela
+        +materialized: table  # Sales Marts as table
